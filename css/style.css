@@ -1,0 +1,1373 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+/* line 11, ../Burger-landing/src/sass/normalizes.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+/* line 23, ../Burger-landing/src/sass/normalizes.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+/* line 31, ../Burger-landing/src/sass/normalizes.scss */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 40, ../Burger-landing/src/sass/normalizes.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 53, ../Burger-landing/src/sass/normalizes.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 64, ../Burger-landing/src/sass/normalizes.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+/* line 76, ../Burger-landing/src/sass/normalizes.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 85, ../Burger-landing/src/sass/normalizes.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 95, ../Burger-landing/src/sass/normalizes.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 105, ../Burger-landing/src/sass/normalizes.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 116, ../Burger-landing/src/sass/normalizes.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 125, ../Burger-landing/src/sass/normalizes.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 133, ../Burger-landing/src/sass/normalizes.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 137, ../Burger-landing/src/sass/normalizes.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+/* line 148, ../Burger-landing/src/sass/normalizes.scss */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 160, ../Burger-landing/src/sass/normalizes.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 176, ../Burger-landing/src/sass/normalizes.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 186, ../Burger-landing/src/sass/normalizes.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 195, ../Burger-landing/src/sass/normalizes.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 206, ../Burger-landing/src/sass/normalizes.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 218, ../Burger-landing/src/sass/normalizes.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+/* line 229, ../Burger-landing/src/sass/normalizes.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 240, ../Burger-landing/src/sass/normalizes.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 253, ../Burger-landing/src/sass/normalizes.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+/* line 261, ../Burger-landing/src/sass/normalizes.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+/* line 270, ../Burger-landing/src/sass/normalizes.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 280, ../Burger-landing/src/sass/normalizes.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 290, ../Burger-landing/src/sass/normalizes.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+/* line 299, ../Burger-landing/src/sass/normalizes.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 308, ../Burger-landing/src/sass/normalizes.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+/* line 320, ../Burger-landing/src/sass/normalizes.scss */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 328, ../Burger-landing/src/sass/normalizes.scss */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+/* line 339, ../Burger-landing/src/sass/normalizes.scss */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+/* line 347, ../Burger-landing/src/sass/normalizes.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 1, ../Burger-landing/src/sass/resets.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 21, ../Burger-landing/src/sass/resets.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 25, ../Burger-landing/src/sass/resets.scss */
+html {
+  height: 100%;
+}
+
+/* line 28, ../Burger-landing/src/sass/resets.scss */
+body {
+  line-height: 1;
+}
+
+/* line 31, ../Burger-landing/src/sass/resets.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 34, ../Burger-landing/src/sass/resets.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 37, ../Burger-landing/src/sass/resets.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 42, ../Burger-landing/src/sass/resets.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 15, ../Burger-landing/src/sass/style.sass */
+html {
+  scroll-behavior: smooth;
+}
+
+/* line 17, ../Burger-landing/src/sass/style.sass */
+* {
+  box-sizing: border-box;
+}
+
+/* line 19, ../Burger-landing/src/sass/style.sass */
+body {
+  background: #1C1C1C;
+  color: #fff;
+  font-family: 'Roboto',sans-serif;
+}
+
+/* line 23, ../Burger-landing/src/sass/style.sass */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+/* line 25, ../Burger-landing/src/sass/style.sass */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 28, ../Burger-landing/src/sass/style.sass */
+img {
+  max-width: 100%;
+}
+
+/* line 30, ../Burger-landing/src/sass/style.sass */
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  overflow: hidden;
+}
+
+/* line 35, ../Burger-landing/src/sass/style.sass */
+.main-section {
+  min-height: 790.99px;
+  background: #1C1C1C;
+  overflow: hidden;
+}
+
+/* line 39, ../Burger-landing/src/sass/style.sass */
+.main-section__container-nav {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 44, ../Burger-landing/src/sass/style.sass */
+.main-section__subtitle {
+  font-size: calc(12px + 2 * ((100vw - 320px) / 850));
+  letter-spacing: 0.1em;
+  margin-bottom: 7px;
+}
+
+/* line 48, ../Burger-landing/src/sass/style.sass */
+.main-section__title {
+  font-size: calc(24px + 34 * ((100vw - 320px) / 850));
+  margin-bottom: 37px;
+}
+
+/* line 51, ../Burger-landing/src/sass/style.sass */
+.main-section__text {
+  font-size: calc(12px + 6 * ((100vw - 320px) / 850));
+  opacity: 0.7;
+  margin-bottom: 42px;
+  max-width: 100%;
+}
+
+/* line 56, ../Burger-landing/src/sass/style.sass */
+.main-section__wrapper {
+  max-width: 555px;
+}
+
+/* line 58, ../Burger-landing/src/sass/style.sass */
+.main-section__logo {
+  height: 43px;
+}
+
+/* line 60, ../Burger-landing/src/sass/style.sass */
+.main-section__welcome {
+  margin: -78px;
+  background: url("../img/welcome-bg.jpg") center/cover no-repeat;
+  padding: 200px 0;
+  margin-bottom: 0px;
+}
+
+/* line 65, ../Burger-landing/src/sass/style.sass */
+.main-section__welcome-container {
+  overflow: hidden;
+}
+
+/* line 68, ../Burger-landing/src/sass/style.sass */
+.nav-menu__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 72, ../Burger-landing/src/sass/style.sass */
+.nav-menu__list-item {
+  margin-right: 18px;
+}
+
+/* line 74, ../Burger-landing/src/sass/style.sass */
+.nav-menu__list-item:last-child {
+  margin-right: 0px;
+}
+
+/* line 76, ../Burger-landing/src/sass/style.sass */
+.nav-menu__link {
+  font-size: 14px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+/* line 80, ../Burger-landing/src/sass/style.sass */
+.nav-menu__link:hover {
+  opacity: 0.9;
+}
+
+/* line 82, ../Burger-landing/src/sass/style.sass */
+.nav-menu__link_active {
+  opacity: 1;
+}
+
+/* line 84, ../Burger-landing/src/sass/style.sass */
+.button {
+  width: 165px;
+  height: 49px;
+  background: #F6762C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+}
+
+/* line 93, ../Burger-landing/src/sass/style.sass */
+.button:hover {
+  opacity: 0.8;
+}
+
+/* line 95, ../Burger-landing/src/sass/style.sass */
+.button_small {
+  max-width: 141px;
+  height: 39px;
+  font-size: 12px;
+}
+
+/* line 99, ../Burger-landing/src/sass/style.sass */
+.second-section {
+  padding: 100px 0;
+  min-height: 543px;
+  overflow: hidden;
+}
+
+/* line 103, ../Burger-landing/src/sass/style.sass */
+.second-section__card-img {
+  margin-bottom: 28px;
+}
+
+/* line 105, ../Burger-landing/src/sass/style.sass */
+.second-section__card-title {
+  margin-bottom: 13px;
+}
+
+/* line 108, ../Burger-landing/src/sass/style.sass */
+.foodlist {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 40px 10px;
+}
+
+/* line 114, ../Burger-landing/src/sass/style.sass */
+.foodlist__title {
+  font-size: 20px;
+  align-items: center;
+}
+
+/* line 117, ../Burger-landing/src/sass/style.sass */
+.foodlist__text {
+  font-size: 16px;
+  opacity: 0.7;
+  width: 263px;
+  padding: 0 30px;
+}
+
+/* line 122, ../Burger-landing/src/sass/style.sass */
+.foodlist__card {
+  width: 263px;
+  height: 323px;
+  background: #312F30;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* line 129, ../Burger-landing/src/sass/style.sass */
+.foodlist__img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+}
+
+/* line 133, ../Burger-landing/src/sass/style.sass */
+.third-section {
+  padding: 60px 0px;
+  min-height: 543px;
+  background-color: #312F30;
+}
+
+/* line 138, ../Burger-landing/src/sass/style.sass */
+.third-section__container-order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 90px;
+}
+
+/* line 143, ../Burger-landing/src/sass/style.sass */
+.third-section__left-img {
+  max-width: 549px;
+  height: 499px;
+}
+
+/* line 146, ../Burger-landing/src/sass/style.sass */
+.third-section__right-wrapper {
+  max-width: 371px;
+}
+
+/* line 150, ../Burger-landing/src/sass/style.sass */
+.third-section__right-title {
+  font-size: 44.2px;
+  margin-bottom: 24px;
+}
+
+/* line 153, ../Burger-landing/src/sass/style.sass */
+.third-section__right-text {
+  font-size: calc(14px + 2 * ((100vw - 320px) / 850));
+  opacity: 0.7;
+  margin-bottom: 13px;
+}
+
+/* line 157, ../Burger-landing/src/sass/style.sass */
+.third-section__spans {
+  margin-bottom: 13px;
+}
+
+/* line 160, ../Burger-landing/src/sass/style.sass */
+.price span {
+  color: #F6762C;
+}
+
+/* line 162, ../Burger-landing/src/sass/style.sass */
+.price__item {
+  font-weight: 500;
+  font-size: 20px;
+  margin-right: 6px;
+}
+
+/* line 166, ../Burger-landing/src/sass/style.sass */
+.price__item:last-child {
+  margin-right: 0px;
+}
+
+/* line 168, ../Burger-landing/src/sass/style.sass */
+.price__item_new-product {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+/* line 171, ../Burger-landing/src/sass/style.sass */
+.price__item_old {
+  font-size: 16px;
+  opacity: 0.5;
+  text-decoration-line: line-through;
+}
+
+/* line 175, ../Burger-landing/src/sass/style.sass */
+.fourth-section {
+  min-height: 1481px;
+  background: #1C1C1C;
+  padding-top: 130px;
+}
+
+/* line 179, ../Burger-landing/src/sass/style.sass */
+.product {
+  padding-bottom: 160px;
+}
+
+/* line 181, ../Burger-landing/src/sass/style.sass */
+.product-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* line 186, ../Burger-landing/src/sass/style.sass */
+.product-card {
+  width: 555px;
+  min-height: 300px;
+  padding: 60px 25px 60px 290px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 193, ../Burger-landing/src/sass/style.sass */
+.product-card_coffee {
+  background-image: url("../img/product-1.jpg");
+}
+
+/* line 195, ../Burger-landing/src/sass/style.sass */
+.product-card_pizza-hut {
+  background-image: url("../img/product-2.jpg");
+}
+
+/* line 197, ../Burger-landing/src/sass/style.sass */
+.product-card_burger-king {
+  background-image: url("../img/product-3.jpg");
+}
+
+/* line 199, ../Burger-landing/src/sass/style.sass */
+.product-card_papajohns {
+  background-image: url("../img/product-4.jpg");
+}
+
+/* line 201, ../Burger-landing/src/sass/style.sass */
+.product-card:nth-child(even) {
+  padding-left: 30px;
+  padding-right: 253px;
+}
+
+/* line 205, ../Burger-landing/src/sass/style.sass */
+.product-title {
+  margin-bottom: 20px;
+}
+
+/* line 207, ../Burger-landing/src/sass/style.sass */
+.product-text {
+  font-size: 16px;
+  opacity: 0.7;
+  max-width: 263px;
+  margin-bottom: 11px;
+}
+
+/* line 212, ../Burger-landing/src/sass/style.sass */
+.product-price {
+  margin-bottom: 11px;
+}
+
+/* line 214, ../Burger-landing/src/sass/style.sass */
+.feedback {
+  margin-bottom: 150px;
+  padding: 0px 121px 0px 146px;
+}
+
+/* line 217, ../Burger-landing/src/sass/style.sass */
+.feedback-box {
+  max-width: 851px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 222, ../Burger-landing/src/sass/style.sass */
+.feedback-right-wrapper {
+  text-align: center;
+}
+
+/* line 224, ../Burger-landing/src/sass/style.sass */
+.feedback__img {
+  max-width: 365px;
+  height: 360.26px;
+}
+
+/* line 227, ../Burger-landing/src/sass/style.sass */
+.feedback__text {
+  width: 368px;
+  margin-bottom: 27px;
+}
+
+/* line 230, ../Burger-landing/src/sass/style.sass */
+.feedback__quoute {
+  height: 47px;
+  margin-bottom: 37px;
+}
+
+/* line 233, ../Burger-landing/src/sass/style.sass */
+.feedback__title {
+  font-size: calc(20px + 4 * ((100vw - 320px) / 850));
+  margin-bottom: 4px;
+}
+
+/* line 236, ../Burger-landing/src/sass/style.sass */
+.feedback__span {
+  width: 77px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* line 242, ../Burger-landing/src/sass/style.sass */
+.text {
+  font-size: calc(14px + 2 * ((100vw - 320px) / 850));
+  opacity: 0.7;
+}
+
+/* line 245, ../Burger-landing/src/sass/style.sass */
+.download {
+  background-color: #312F30;
+}
+
+/* line 248, ../Burger-landing/src/sass/style.sass */
+.download__container {
+  min-height: 170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 97px 61px 71px;
+}
+
+/* line 255, ../Burger-landing/src/sass/style.sass */
+.download__text {
+  font-size: calc(24px + 16 * ((100vw - 320px) / 850));
+}
+
+/* line 257, ../Burger-landing/src/sass/style.sass */
+.download__btn {
+  font-size: 16px;
+}
+
+/* line 259, ../Burger-landing/src/sass/style.sass */
+.footer {
+  padding: 120px 0;
+  min-height: 381px;
+}
+
+/* line 262, ../Burger-landing/src/sass/style.sass */
+.footer__list-title {
+  display: inline-block;
+  margin-bottom: 14px;
+}
+
+/* line 265, ../Burger-landing/src/sass/style.sass */
+.footer__sublist-item:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+/* line 268, ../Burger-landing/src/sass/style.sass */
+.footer__email {
+  justify-self: left;
+}
+
+/* line 271, ../Burger-landing/src/sass/style.sass */
+.footer__email-link {
+  display: flex;
+  align-items: center;
+}
+
+/* line 274, ../Burger-landing/src/sass/style.sass */
+.footer__email-link::before {
+  margin-right: 10px;
+  height: 12px;
+}
+
+/* line 277, ../Burger-landing/src/sass/style.sass */
+.footer__email-link_mail::before {
+  content: url("../icons/global.svg");
+}
+
+/* line 280, ../Burger-landing/src/sass/style.sass */
+.footer__email-link_web::before {
+  content: url("../icons/mail.svg");
+}
+
+/* line 283, ../Burger-landing/src/sass/style.sass */
+.footer__email-link_mail {
+  margin-bottom: 9px;
+}
+
+/* line 285, ../Burger-landing/src/sass/style.sass */
+.footer__socials {
+  justify-self: right;
+}
+
+/* line 287, ../Burger-landing/src/sass/style.sass */
+.footer__list {
+  gap: 30px;
+}
+
+/* line 289, ../Burger-landing/src/sass/style.sass */
+.footer__email-logo {
+  margin-bottom: 22px;
+}
+
+/* line 291, ../Burger-landing/src/sass/style.sass */
+.footer__container {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+/* line 298, ../Burger-landing/src/sass/style.sass */
+.footer__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* line 301, ../Burger-landing/src/sass/style.sass */
+.footer__sublist-item {
+  margin-bottom: 15px;
+}
+
+/* line 303, ../Burger-landing/src/sass/style.sass */
+.footer__sublist-item:last-child {
+  margin-bottom: 0px;
+}
+
+/* line 306, ../Burger-landing/src/sass/style.sass */
+.footer a {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* line 309, ../Burger-landing/src/sass/style.sass */
+.footer__social-title {
+  margin-bottom: 16px;
+}
+
+/* line 311, ../Burger-landing/src/sass/style.sass */
+.footer .footer__title {
+  font-size: 16px;
+  opacity: 1;
+}
+
+/* line 316, ../Burger-landing/src/sass/style.sass */
+.icons-item {
+  margin-right: 10px;
+}
+
+/* line 318, ../Burger-landing/src/sass/style.sass */
+.icons-item:last-child {
+  margin-right: 0px;
+}
+
+@media (max-width: 1199px) {
+  /* line 324, ../Burger-landing/src/sass/style.sass */
+  .footer__container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  /* line 326, ../Burger-landing/src/sass/style.sass */
+  .main-section {
+    min-height: 463.99px;
+  }
+  /* line 329, ../Burger-landing/src/sass/style.sass */
+  .container {
+    width: 960px;
+  }
+  /* line 331, ../Burger-landing/src/sass/style.sass */
+  .main-section__text {
+    opacity: 1;
+  }
+  /* line 333, ../Burger-landing/src/sass/style.sass */
+  .third-section__left-img {
+    width: 449px;
+    height: 399px;
+  }
+  /* line 336, ../Burger-landing/src/sass/style.sass */
+  .feedback__img {
+    width: 340px;
+    height: 340px;
+  }
+  /* line 339, ../Burger-landing/src/sass/style.sass */
+  .feedback {
+    padding-right: 70px;
+    margin-bottom: 100px;
+  }
+  /* line 342, ../Burger-landing/src/sass/style.sass */
+  .third-section {
+    padding: 30px 0px;
+    min-height: 455px;
+  }
+  /* line 345, ../Burger-landing/src/sass/style.sass */
+  .fourth-section {
+    padding-top: 100px;
+  }
+  /* line 347, ../Burger-landing/src/sass/style.sass */
+  .footer {
+    min-height: 337px;
+    padding: 82px 0;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 351, ../Burger-landing/src/sass/style.sass */
+  .feedback__text {
+    max-width: 305px;
+  }
+  /* line 353, ../Burger-landing/src/sass/style.sass */
+  .container {
+    width: 720px;
+  }
+  /* line 355, ../Burger-landing/src/sass/style.sass */
+  .third-section__container-order {
+    padding-right: 0px;
+  }
+  /* line 357, ../Burger-landing/src/sass/style.sass */
+  .third-section__right-wrapper {
+    max-width: 291px;
+  }
+  /* line 359, ../Burger-landing/src/sass/style.sass */
+  .third-section__left-img {
+    max-width: 349px;
+    height: 299px;
+  }
+  /* line 362, ../Burger-landing/src/sass/style.sass */
+  .third-section {
+    min-height: 361px;
+  }
+  /* line 364, ../Burger-landing/src/sass/style.sass */
+  .feedback {
+    padding: 0px 0px 0px 0px;
+  }
+  /* line 366, ../Burger-landing/src/sass/style.sass */
+  .download__container {
+    padding: 60px;
+  }
+  /* line 368, ../Burger-landing/src/sass/style.sass */
+  .third-section__container-order {
+    flex-direction: column;
+    text-align: center;
+  }
+  /* line 371, ../Burger-landing/src/sass/style.sass */
+  .third-section__btn {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  /* line 374, ../Burger-landing/src/sass/style.sass */
+  .footer__info {
+    grid-area: info;
+  }
+  /* line 376, ../Burger-landing/src/sass/style.sass */
+  .footer__email {
+    grid-area: email;
+    justify-self: start;
+  }
+  /* line 380, ../Burger-landing/src/sass/style.sass */
+  .footer__socials {
+    grid-area: socials;
+    justify-self: end;
+    align-self: center;
+  }
+  /* line 384, ../Burger-landing/src/sass/style.sass */
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "info info" "email socials";
+    justify-items: center;
+    gap: 30px 100px;
+  }
+  /* line 390, ../Burger-landing/src/sass/style.sass */
+  .footer__list {
+    gap: 40px;
+  }
+  /* line 392, ../Burger-landing/src/sass/style.sass */
+  .foodlist {
+    justify-content: space-evenly;
+  }
+  /* line 394, ../Burger-landing/src/sass/style.sass */
+  .footer {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 397, ../Burger-landing/src/sass/style.sass */
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    z-index: 20;
+    transition: 0.6s all;
+  }
+  /* line 406, ../Burger-landing/src/sass/style.sass */
+  .nav-menu__list {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+  }
+  /* line 411, ../Burger-landing/src/sass/style.sass */
+  .nav-menu__link {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  /* line 415, ../Burger-landing/src/sass/style.sass */
+  .nav-menu__list-item {
+    margin-right: 0px;
+  }
+  /* line 417, ../Burger-landing/src/sass/style.sass */
+  .hamburger {
+    width: 30px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    min-height: 30px;
+    z-index: 40;
+  }
+  /* line 424, ../Burger-landing/src/sass/style.sass */
+  .hamburger span {
+    position: relative;
+    display: block;
+    background: white;
+    height: 2px;
+    width: 100%;
+    z-index: 2;
+    margin-bottom: 4px;
+    transition: 1s all;
+  }
+  /* line 433, ../Burger-landing/src/sass/style.sass */
+  .hamburger span:last-child {
+    margin-bottom: 0px;
+  }
+  /* line 436, ../Burger-landing/src/sass/style.sass */
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  /* line 438, ../Burger-landing/src/sass/style.sass */
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  /* line 440, ../Burger-landing/src/sass/style.sass */
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  /* line 442, ../Burger-landing/src/sass/style.sass */
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  /* line 444, ../Burger-landing/src/sass/style.sass */
+  .nav-menu_active {
+    right: 0;
+  }
+  /* line 446, ../Burger-landing/src/sass/style.sass */
+  .feedback {
+    margin-bottom: 60px;
+  }
+  /* line 448, ../Burger-landing/src/sass/style.sass */
+  .container {
+    width: 540px;
+  }
+  /* line 451, ../Burger-landing/src/sass/style.sass */
+  .main-section__btn {
+    display: none;
+  }
+  /* line 453, ../Burger-landing/src/sass/style.sass */
+  .second-section {
+    padding: 80px 0;
+  }
+  /* line 455, ../Burger-landing/src/sass/style.sass */
+  .product {
+    padding-bottom: 100px;
+  }
+  /* line 457, ../Burger-landing/src/sass/style.sass */
+  .product-card__box {
+    position: absolute;
+    right: 0;
+  }
+  /* line 460, ../Burger-landing/src/sass/style.sass */
+  .product-card {
+    width: 100%;
+    padding-left: 50%;
+  }
+  /* line 463, ../Burger-landing/src/sass/style.sass */
+  .product-card:nth-child(even) {
+    padding-right: 50%;
+  }
+  /* line 465, ../Burger-landing/src/sass/style.sass */
+  .feedback-box {
+    flex-direction: column;
+    text-align: center;
+  }
+  /* line 468, ../Burger-landing/src/sass/style.sass */
+  .main-section__welcome {
+    margin-top: -120px;
+    padding-bottom: 40px;
+  }
+  /* line 471, ../Burger-landing/src/sass/style.sass */
+  .download__container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 475, ../Burger-landing/src/sass/style.sass */
+  .download__container {
+    min-height: 155px;
+  }
+  /* line 477, ../Burger-landing/src/sass/style.sass */
+  .button {
+    max-width: 120px;
+    height: 30px;
+    border-radius: 6px;
+  }
+  /* line 481, ../Burger-landing/src/sass/style.sass */
+  .main-section__text {
+    margin-bottom: 32px;
+  }
+  /* line 484, ../Burger-landing/src/sass/style.sass */
+  .container {
+    width: 100%;
+    overflow: hidden;
+  }
+  /* line 487, ../Burger-landing/src/sass/style.sass */
+  .third-section__btn {
+    max-width: 144px;
+    height: 40px;
+  }
+  /* line 490, ../Burger-landing/src/sass/style.sass */
+  .footer__container {
+    gap: 34px 100px;
+  }
+  /* line 493, ../Burger-landing/src/sass/style.sass */
+  .footer__socials {
+    justify-self: center;
+  }
+  /* line 495, ../Burger-landing/src/sass/style.sass */
+  .footer__email {
+    justify-self: center;
+  }
+  /* line 497, ../Burger-landing/src/sass/style.sass */
+  .main-section__container-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  /* line 500, ../Burger-landing/src/sass/style.sass */
+  .nav-menu__list {
+    flex-direction: column;
+    gap: 10px;
+  }
+  /* line 503, ../Burger-landing/src/sass/style.sass */
+  .nav-menu__list-item {
+    margin-right: 0px;
+  }
+  /* line 505, ../Burger-landing/src/sass/style.sass */
+  .main-section__welcome {
+    margin: -191px;
+    padding-top: 234px;
+    padding-bottom: 120px;
+  }
+  /* line 509, ../Burger-landing/src/sass/style.sass */
+  .main-section__wrapper {
+    padding-left: 190px;
+  }
+  /* line 513, ../Burger-landing/src/sass/style.sass */
+  .main-section__title {
+    margin-bottom: 24px;
+  }
+  /* line 515, ../Burger-landing/src/sass/style.sass */
+  .main-section {
+    min-height: 362.99px;
+  }
+  /* line 517, ../Burger-landing/src/sass/style.sass */
+  .second-section {
+    padding: 60px 0;
+  }
+  /* line 519, ../Burger-landing/src/sass/style.sass */
+  .third-section__right-title {
+    font-size: 24px;
+  }
+  /* line 521, ../Burger-landing/src/sass/style.sass */
+  .third-section__right-text {
+    font-size: 14px;
+  }
+  /* line 523, ../Burger-landing/src/sass/style.sass */
+  .download__container {
+    padding: 44px;
+    align-items: center;
+  }
+  /* line 526, ../Burger-landing/src/sass/style.sass */
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  /* line 531, ../Burger-landing/src/sass/style.sass */
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  /* line 535, ../Burger-landing/src/sass/style.sass */
+  .footer__email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 539, ../Burger-landing/src/sass/style.sass */
+  .footer__sublist-item {
+    margin-bottom: 16px;
+  }
+  /* line 541, ../Burger-landing/src/sass/style.sass */
+  .feedback__img {
+    max-width: 305px;
+    height: 305px;
+  }
+  /* line 544, ../Burger-landing/src/sass/style.sass */
+  .main-section__subtitle {
+    margin-bottom: 10px;
+  }
+  /* line 546, ../Burger-landing/src/sass/style.sass */
+  .main-section__wrapper {
+    max-width: 500px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

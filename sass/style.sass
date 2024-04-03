@@ -1,0 +1,548 @@
+@import "normalizes.scss"
+@import "resets.scss"
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap')
+$maxWidth: 1170
+@mixin adaptiv-font($pcSize, $mobSize) 
+ $addSize: $pcSize - $mobSize
+ $maxWidth: $maxWidth - 320
+ font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}))
+        
+
+$color-main: #1C1C1C
+$color-gray: #312F30
+$color-orange: #F6762C
+html
+    scroll-behavior: smooth
+*
+    box-sizing: border-box
+body
+    background: $color-main
+    color: #fff
+    font-family: 'Roboto',sans-serif
+h1,h2,h3,h4,h5,h6
+    font-weight: 500
+a
+    color: #fff
+    text-decoration: none
+img
+    max-width: 100%
+.container
+    max-width: 1170px
+    margin: 0 auto
+    padding: 0px 15px
+    overflow: hidden
+.main-section
+    min-height: 790.99px
+    background: $color-main
+    overflow: hidden
+    &__container-nav
+        padding-top: 25px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__subtitle
+        @include adaptiv-font(14,12)
+        letter-spacing: 0.1em
+        margin-bottom: 7px
+    &__title
+        @include adaptiv-font(58,24)
+        margin-bottom: 37px
+    &__text
+        @include adaptiv-font(18,12)
+        opacity: 0.7
+        margin-bottom: 42px
+        max-width: 100%
+    &__wrapper
+        max-width: 555px
+    &__logo
+        height: 43px
+    &__welcome
+        margin: -78px
+        background: url("../img/welcome-bg.jpg") center/cover no-repeat
+        padding: 200px 0
+        margin-bottom: 0px
+        &-container
+            overflow: hidden
+.nav-menu
+    &__list
+        list-style-type: none
+        display: flex
+        flex-direction: row
+    &__list-item
+        margin-right: 18px
+        &:last-child
+            margin-right: 0px
+    &__link
+        font-size: 14px
+        opacity: 0.7
+        transition: opacity 0.3s
+        &:hover
+            opacity: 0.9
+        &_active
+            opacity: 1
+.button
+    width: 165px
+    height: 49px
+    background: $color-orange
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 5px
+    transition: opacity 0.3s
+    &:hover
+        opacity: 0.8
+    &_small
+        max-width: 141px
+        height: 39px
+        font-size: 12px
+.second-section
+    padding: 100px 0
+    min-height: 543px
+    overflow: hidden
+    &__card-img
+        margin-bottom: 28px
+    &__card-title
+        margin-bottom: 13px
+        
+.foodlist
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    text-align: center
+    gap: 40px 10px
+    &__title
+        font-size: 20px
+        align-items: center
+    &__text
+        font-size: 16px
+        opacity: 0.7
+        width: 263px
+        padding: 0 30px
+    &__card
+        width: 263px
+        height: 323px
+        background: $color-gray
+        border-radius: 10px
+        overflow: hidden
+        
+    &__img
+        width: 100%
+        height: 175px
+        object-fit: cover
+.third-section
+    padding: 60px 0px
+    min-height: 543px
+    background-color: $color-gray
+   
+    &__container-order
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-right: 90px
+    &__left-img
+        max-width: 549px
+        height: 499px
+    &__right-wrapper
+        max-width: 371px
+      
+        
+    &__right-title
+            font-size: 44.2px
+            margin-bottom: 24px
+    &__right-text
+        @include adaptiv-font(16,14)
+        opacity: 0.7
+        margin-bottom: 13px
+    &__spans
+        margin-bottom: 13px
+.price
+    span
+        color: $color-orange
+    &__item
+        font-weight: 500
+        font-size: 20px
+        margin-right: 6px
+        &:last-child
+            margin-right: 0px
+        &_new-product
+            font-size: 16px
+            margin-right: 10px
+        &_old
+            font-size: 16px
+            opacity: 0.5
+            text-decoration-line: line-through
+.fourth-section
+    min-height: 1481px
+    background: $color-main
+    padding-top: 130px
+.product
+    padding-bottom: 160px
+    &-box
+        display: flex
+        flex-wrap: wrap
+        gap: 30px
+        justify-content: center
+    &-card
+        width: 555px
+        min-height: 300px
+        padding: 60px 25px 60px 290px
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        &_coffee
+            background-image: url("../img/product-1.jpg")
+        &_pizza-hut
+            background-image: url("../img/product-2.jpg")
+        &_burger-king
+            background-image: url("../img/product-3.jpg")
+        &_papajohns
+            background-image: url("../img/product-4.jpg")
+        &:nth-child(even)
+            padding-left: 30px
+            padding-right: 253px
+            
+    &-title
+        margin-bottom: 20px
+    &-text
+        font-size: 16px
+        opacity: 0.7
+        max-width: 263px
+        margin-bottom: 11px
+    &-price
+        margin-bottom: 11px
+.feedback
+    margin-bottom: 150px
+    padding: 0px 121px 0px 146px
+    &-box
+        max-width: 851px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-right-wrapper
+        text-align: center
+    &__img
+        max-width: 365px
+        height: 360.26px
+    &__text
+        width: 368px
+        margin-bottom: 27px
+    &__quoute
+        height: 47px
+        margin-bottom: 37px
+    &__title
+        @include adaptiv-font(24,20)
+        margin-bottom: 4px
+    &__span
+        width: 77px
+        text-align: center
+        font-weight: 500
+        font-size: 12px
+        opacity: 0.7
+.text
+    @include adaptiv-font(16,14)
+    opacity: 0.7
+.download
+    background-color: $color-gray
+    
+    &__container
+        min-height: 170px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 60px 97px 61px 71px
+
+    &__text
+        @include adaptiv-font(40,24)
+    &__btn
+        font-size: 16px
+.footer
+    padding: 120px 0
+    min-height: 381px
+    &__list-title
+        display: inline-block
+        margin-bottom: 14px
+    &__sublist-item:hover
+        opacity: 0.7
+        transition: 0.3s
+    &__email
+        
+        justify-self: left
+        &-link
+            display: flex
+            align-items: center
+        &-link::before
+            margin-right: 10px
+            height: 12px
+        &-link_mail::before
+            content: url("../icons/global.svg")
+        
+        &-link_web::before
+            content: url("../icons/mail.svg")
+        
+        &-link_mail
+            margin-bottom: 9px
+    &__socials
+        justify-self: right   
+    &__list
+        gap: 30px
+    &__email-logo
+        margin-bottom: 22px
+    &__container
+        display: grid
+        justify-items: center
+        grid-template-columns: 1fr 1fr 1fr
+        gap: 20px
+        
+        
+    &__list
+        display: grid
+        grid-template-columns: repeat(3,1fr)
+    &__sublist-item
+        margin-bottom: 15px
+        &:last-child
+            margin-bottom: 0px
+            
+    a
+        font-size: 12px
+        opacity: 0.8
+    &__social-title
+        margin-bottom: 16px
+.footer .footer__title
+    font-size: 16px
+    opacity: 1
+
+.icons
+    &-item
+        margin-right: 10px
+        &:last-child
+            margin-right: 0px
+
+    
+    
+@media (max-width: 1199px)
+    .footer__container
+        grid-template-columns: 1fr 1fr 1fr
+    .main-section
+        min-height: 463.99px
+
+    .container
+        width: 960px
+    .main-section__text
+        opacity: 1
+    .third-section__left-img 
+        width: 449px
+        height: 399px
+    .feedback__img 
+        width: 340px
+        height: 340px
+    .feedback
+        padding-right: 70px
+        margin-bottom: 100px
+    .third-section
+        padding: 30px 0px
+        min-height: 455px
+    .fourth-section 
+        padding-top: 100px
+    .footer
+        min-height: 337px
+        padding: 82px 0
+@media(max-width: 991px)
+    .feedback__text 
+        max-width: 305px
+    .container
+        width: 720px
+    .third-section__container-order 
+        padding-right: 0px
+    .third-section__right-wrapper
+        max-width: 291px
+    .third-section__left-img
+        max-width: 349px
+        height: 299px
+    .third-section
+        min-height: 361px
+    .feedback
+        padding: 0px 0px 0px 0px
+    .download__container 
+        padding: 60px
+    .third-section__container-order 
+        flex-direction: column
+        text-align: center
+    .third-section__btn
+        margin-right: auto
+        margin-left: auto
+    .footer__info
+        grid-area: info
+    .footer__email
+        grid-area: email
+        justify-self: start
+        
+    .footer__socials
+        grid-area: socials
+        justify-self: end
+        align-self: center
+    .footer__container
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr 1fr
+        grid-template-areas: "info info" "email socials"
+        justify-items: center
+        gap: 30px 100px
+    .footer__list
+        gap: 40px 
+    .foodlist
+        justify-content: space-evenly
+    .footer
+        padding: 60px 0
+@media(max-width: 767px)
+    .nav-menu
+        position: fixed
+        top: 0
+        right: -100%
+        height: 100%
+        width: 50%
+        background-color: black       
+        z-index: 20
+        transition: 0.6s all
+        &__list
+            flex-direction: column
+            justify-content: space-evenly
+            height: 100%
+            align-items: center
+        &__link
+            color: white
+            font-size: 14px
+            font-weight: 700
+        &__list-item
+            margin-right: 0px
+    .hamburger
+        width: 30px
+        position: fixed
+        right: 20px
+        top: 20px
+        min-height: 30px
+        z-index: 40
+        span
+            position: relative
+            display: block
+            background: white
+            height: 2px
+            width: 100%
+            z-index: 2
+            margin-bottom: 4px
+            transition: 1s all
+            &:last-child
+                margin-bottom: 0px
+    .hamburger_active
+        span
+            margin-bottom: -2px
+            &:nth-child(1)
+                transform: translateY(3px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg)
+    .nav-menu_active
+        right: 0
+    .feedback
+        margin-bottom: 60px
+    .container
+        width: 540px
+    
+    .main-section__btn
+        display: none
+    .second-section
+        padding: 80px 0
+    .product
+        padding-bottom: 100px
+    .product-card__box
+        position: absolute
+        right: 0
+    .product-card
+        width: 100%
+        padding-left: 50%
+        &:nth-child(even)
+            padding-right: 50%
+    .feedback-box
+        flex-direction: column
+        text-align: center
+    .main-section__welcome
+        margin-top: -120px
+        padding-bottom: 40px
+    .download__container
+        flex-direction: column
+        gap: 20px
+@media(max-width: 575px)
+    .download__container
+        min-height: 155px
+    .button 
+        max-width: 120px
+        height: 30px
+        border-radius: 6px
+    .main-section__text
+        margin-bottom: 32px
+
+    .container
+        width: 100%
+        overflow: hidden
+    .third-section__btn
+        max-width: 144px
+        height: 40px
+    .footer__container    
+        gap: 34px 100px
+
+    .footer__socials 
+        justify-self: center
+    .footer__email 
+        justify-self: center
+    .main-section__container-nav
+        flex-direction: column
+        text-align: center
+    .nav-menu__list
+        flex-direction: column
+        gap: 10px
+    .nav-menu__list-item
+        margin-right: 0px
+    .main-section__welcome
+        margin: -191px
+        padding-top: 234px
+        padding-bottom: 120px
+    .main-section__wrapper
+        padding-left: 190px
+    .main-section__title 
+        
+    .main-section__title 
+        margin-bottom: 24px
+    .main-section
+        min-height: 362.99px
+    .second-section
+        padding: 60px 0
+    .third-section__right-title
+        font-size: 24px
+    .third-section__right-text
+        font-size: 14px
+    .download__container
+        padding: 44px
+        align-items: center
+    .footer__container
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+    .footer__list
+        display: flex
+        flex-direction: column
+        gap: 16px
+    .footer__email
+        display: flex
+        flex-direction: column
+        align-items: center
+    .footer__sublist-item
+        margin-bottom: 16px
+    .feedback__img
+        max-width: 305px
+        height: 305px
+    .main-section__subtitle
+        margin-bottom: 10px
+    .main-section__wrapper
+        max-width: 500px
+
